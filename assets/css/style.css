@@ -1,0 +1,129 @@
+
+@font-face 
+{
+    font-family: rokikier;
+    src: url(../fonts/rokikier.ttf);
+}
+@font-face 
+{
+    font-family: cocogoose;
+    src: url(../fonts/Cocogoose_trial.otf);
+}
+
+
+/* MAIN BODY */
+*
+{
+    background-color: #343535;
+    color: #ecc55b;
+}
+
+/* INTRO */
+.hero
+{
+ h1
+ {
+    font-family: cocogoose;
+    font-size: 50pt;
+    text-align: left;
+    padding-left: 60%;
+    letter-spacing: 2pt;
+ }
+ p
+ {
+    font-size: 30pt;
+    text-align: left;
+    padding-left: 475pt;
+ }
+ }
+
+ .pic
+{
+    float: center;
+    width: 300px;
+    height: 300px;
+}
+
+.navi
+{
+    font-family: cocogoose;
+    font-size: 35pt;
+    text-align: center;
+    letter-spacing: 2pt
+}
+
+/* EDUCATION */
+.educ
+{
+h1 
+{
+    font-family: cocogoose;
+    font-size: 50pt;
+    text-align: left;
+    letter-spacing: 2pt
+}
+}
+
+/* SKILLS AND SOFTWARE */
+.skills
+{  
+    display: flex;
+    flex-direction: row;
+ h1
+ {
+    font-family: cocogoose;
+    font-size: 50pt;
+    text-align: left;
+    letter-spacing: 2pt
+ }
+ h3
+ {
+    font-size: 25pt;
+    text-align: justify;
+    letter-spacing: 2pt
+ }
+    .skill2
+    {
+        text-align: left;
+        padding-left: 900pt;
+    }
+}
+
+/* WORK EXPERIENCE, WORKSHOPS, AND AWARDS */
+.exp
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 30pt;
+h1
+{
+    font-family: cocogoose;
+    font-size: 50pt;
+    text-align: left;
+    letter-spacing: 2pt
+}
+h3
+{
+    font-size: 30pt;
+    text-align: justify;
+    letter-spacing: 2pt
+}
+    .exp2
+    {
+        text-align: left;
+        padding-left: 475pt;
+        font-size: 30pt;
+    }
+}
+
+/* SAMPLE WORKS */
+.work
+{
+h1
+{
+    font-family: cocogoose;
+    font-size: 50pt;
+    text-align: left;
+    letter-spacing: 2pt
+}
+}
