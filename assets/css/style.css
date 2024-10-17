@@ -14,116 +14,345 @@
 /* MAIN BODY */
 *
 {
-    background-color: #343535;
+    background-color: #1a1b1b;
     color: #ecc55b;
+}
+html
+{
+    font-size: 62.5%;
+}
+hr
+{
+    border-color: #ecc55b;
+    border-width: 2rem;
+    border-style: dotted
+}
+
+section
+{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
 }
 
 /* INTRO */
 .hero
 {
- h1
- {
-    font-family: cocogoose;
-    font-size: 50pt;
-    text-align: left;
-    padding-left: 60%;
-    letter-spacing: 2pt;
- }
- p
- {
-    font-size: 30pt;
-    text-align: left;
-    padding-left: 475pt;
- }
- }
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 8rem;
+    justify-content: space-between;
+    padding: 10rem;
 
- .pic
-{
-    float: center;
-    width: 300px;
-    height: 300px;
 }
+    .ikawbahala
+    {
+        flex-direction: row;
+        display: flex;
 
-.navi
-{
-    font-family: cocogoose;
-    font-size: 35pt;
-    text-align: center;
-    letter-spacing: 2pt
-}
+        .top
+        {
+            font-family: cocogoose;
+            font-weight: 700;
+            line-height: 1.3;
+            flex-direction: column;
+            left: 50%;
+            z-index: 1;
+
+            .hello
+            {
+                font-size: 2rem;
+                opacity: 50%;
+            }
+            .name
+            {
+                font-size: 5rem;
+            }
+            p
+            {
+                font-size: 2.5rem;
+                font-family: 'Courier New', Courier, monospace;
+            }
+        }
+        .pic
+        {
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            width: auto;
+            margin-right: 5rem;
+        }
+            .pic img:hover
+            {
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+    }
 
 /* EDUCATION */
 .educ
 {
-h1 
-{
     font-family: cocogoose;
-    font-size: 50pt;
-    text-align: left;
-    letter-spacing: 2pt
-}
+    font-size: 5rem;
+
+    .timeline-area
+    {
+        margin: 10rem auto;
+        width: 50 rem;
+        border-left: 2rem solid #ecc55b;
+        padding: 0 20px 0 30px;
+        
+    }
+    .timelinecontent
+    {
+        padding: 10rem 10rem;
+        font-size: 3rem;
+        border: 0.5rem solid #ecc55b;
+        line-height: 1.25;
+        position: relative;
+        height: 15rem;
+        margin-bottom: 10rem;
+        margin-top: 0%;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        column-gap: 6rem;
+    }
+        div::before
+         {
+            content: '';
+            display: block;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 10%;
+            position: absolute;
+
+         }
+         div:after
+         {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-color: transparent #ecc55b transparent transparent;
+            border-width: 2rem;
+            position: absolute;
+            left: -10rem;
+            top: 10rem;
+         }
+         .timelinecontent h2
+         {
+            font-family: cocogoose;
+            font-size: 4rem;
+         }
+         .timelinecontent h3
+         {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 3rem;
+         }
+         .timelinecontent h4
+         {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 3rem;
+         }
 }
 
 /* SKILLS AND SOFTWARE */
 .skills
 {  
-    display: flex;
-    flex-direction: row;
- h1
- {
-    font-family: cocogoose;
-    font-size: 50pt;
-    text-align: left;
-    letter-spacing: 2pt
- }
- h3
- {
-    font-size: 25pt;
-    text-align: justify;
-    letter-spacing: 2pt
- }
+    display: grid;
+    grid-row: auto;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    border: #ecc55b 2rem;
+
+    .headerskill
+    {
+        font-size: 5rem;
+        font-family: cocogoose;
+    }
+    
+    .skill1
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 3rem;
+    }
+        
+        .skillsoft
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: 14rem;
+            row-gap: 3rem;
+        }
+
+            .skillsoftname
+            {
+                display: flex;
+                flex-direction: row;
+                align-items:  center;
+                column-gap: 19.5rem;
+                row-gap: 3rem;
+                font-size: 3rem;
+            }
+
+        .skillsoft1
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 14rem;
+            row-gap: 5rem;
+        }
+
+            .skillsoftname1
+            {
+                display: flex;
+                flex-direction: row;
+                align-items:  center;
+                column-gap: 19.5rem;
+                row-gap: 3rem;
+                font-size: 3rem;
+            }
+
+        .skillsoft2
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 14rem;
+            row-gap: 5rem;
+        }
+
+            .skillsoftname2
+            {
+                display: flex;
+                flex-direction: row;
+                align-items:  center;
+                column-gap: 19.5rem;
+                row-gap: 3rem;
+                font-size: 3rem;
+            }
+
+        .skilltitle
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 5rem;
+        }
+
     .skill2
     {
-        text-align: left;
-        padding-left: 900pt;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 3rem;
     }
+        .iconpics
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 7.2rem;
+            row-gap: 5rem;
+        }
+        .iconnames
+        {
+            display: flex;
+            flex-direction: row;
+            align-items:  center;
+            column-gap: 10rem;
+            row-gap: 5rem;
+        }
 }
 
 /* WORK EXPERIENCE, WORKSHOPS, AND AWARDS */
 .exp
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: 30pt;
 h1
 {
     font-family: cocogoose;
-    font-size: 50pt;
+    font-size: 5rem;
     text-align: left;
-    letter-spacing: 2pt
+    letter-spacing: 2pt;
+    display: flex;
+    flex-direction: row;
 }
 h3
 {
-    font-size: 30pt;
+    font-size: 3rem;
+    font-family: cocogoose;
     text-align: justify;
     letter-spacing: 2pt
 }
-    .exp2
+.exp1 h3
+{
+    font-family: cocogoose;
+}
+    li
     {
-        text-align: left;
-        padding-left: 475pt;
-        font-size: 30pt;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2rem;
     }
 }
 
 /* SAMPLE WORKS */
 .work
 {
-h1
-{
-    font-family: cocogoose;
-    font-size: 50pt;
-    text-align: left;
-    letter-spacing: 2pt
-}
+    h1
+    {
+        font-family: cocogoose;
+        font-size: 5rem;
+        text-align: left;
+        letter-spacing: 2pt
+    }
+        .row1work
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 5rem;
+            padding: 3rem;
+
+        }
+        .row2work
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 5rem;
+            padding: 5rem;
+        }
+        .row3work
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 5rem;
+            padding: 5rem;
+        }
+        .row4work
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 5rem;
+            padding: 5rem;
+        }
+        .row5work
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 5rem;
+            padding: 5rem;
+        }
 }
